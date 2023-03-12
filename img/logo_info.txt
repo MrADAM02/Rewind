@@ -1,7 +1,7 @@
 
-            Fonts used: OldStandardTT-Italic 
+            Fonts used: Lato-BlackItalic 
 
-            Colors used: 2C3337,AAA8A6  
+            Colors used: F4D504,000000  
 
-            Icon url: https://thenounproject.com/term/speed/1286233  
+            Icon url: https://thenounproject.com/term/rewind/287833  
         

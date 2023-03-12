@@ -52,7 +52,7 @@ footer .social>a:hover{
 }
 
 .checklist>li i{
-    color:var(--secondary-color);
+    color:rgb(211, 178, 11);
 }
 
 code[class*="language-"],

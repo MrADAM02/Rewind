@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>Hundo: A Coding Project By Ahmed Adam</title>
+    <title>Rewind: A Coding Project By Ahmed Adam</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +15,7 @@
 
     <link href="css/site.css" rel="stylesheet">
     <link href="css/prism.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="img/Hundo-logos_white.png">
+    <link rel="icon" type="image/png" href="img/Rewind-logos_white.png">
 
 </head>
 
@@ -24,7 +24,7 @@
 <!-- ==== Nav Section ===== -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="d-inline-block align-text-top" src="img/Hundo-logos_white.png" alt="Adam Logo" width="30" height="24" >Hundo APP</a>
+        <a class="navbar-brand" href="#"><img class="d-inline-block align-text-top" src="img/Rewind-logos_white.png" alt="Adam Logo" width="30" height="24" >REWIND</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,21 +54,59 @@
 <!-- ==== Main Section ===== -->
     <main class="flex-shrink-0">
        <div class="container py-5 px-5 mt-5">
-        <h2 class="border-1 border-bottom border-dark">The Code</h2> 
+        <h2 class="border-1 border-bottom border-dark">The Code for REWIND</h2> 
         <div class="row row-cols-1 sow-cols-lg-2">
                 <div class="col-lg-8">
                     <pre class="line-numbers"><code class="language-javascript">
-                        //Call Hello World
-                        function helloWorld(){
-                            alert("hello World")
+                        //Get the string from the page 
+                        //Controller function
+                        function getValue(){
+                        
+                            document.getElementById("alert").classList.add("invisible");
+                        
+                            let userString = document.getElementById("userString").value;
+                        
+                            let revString = reverseString(userString);
+                        
+                            displayString(revString);
+                        }
+                        
+                        //Reverse the string 
+                        //Logic function
+                        function reverseString(userString){
+                        
+                            let revString = [];
+                        
+                            //reverse a string using a for loop
+                            for (let index = userString.length - 1; index >= 0; index--) {
+                                revString += userString[index];  
+                            }
+                        
+                            return revString;
+                        }
+                        
+                        //Display the reversed string to the user
+                        //View function
+                        function displayString(revString){
+                        
+                            //write the msg to the page
+                            document.getElementById("msg").innerHTML = `Your String Reversed is: ${revString}`;
+                            //show the alert box
+                            document.getElementById("alert").classList.remove("invisible");
+                        
                         }
                         </code>
                     </pre>
                 </div>
                 <div class="col-lg-4">
-                    <p>The Code is structed in one function.</p>
-                    <h5>Hello World</h5>
-                    <p>Hello World is a function that display an alert with a message of "Hello World"</p>
+                    <p>The Code is structed in There function.</p>
+                    <h5>function getValue</h5>
+                    <p>Get the string from the page.</p>
+                    <h5>function reverseString</h5>
+                    <p>We reverse a string using a for loop.</p>
+                    <h5>function displayString</h5>
+                    <p>Display the reversed string to the user.</p>
+                    <p>write the msg to the page and show the alert box.</p>
                 </div>
             </div>
        </div>
